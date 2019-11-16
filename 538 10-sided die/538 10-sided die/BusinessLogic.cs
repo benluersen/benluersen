@@ -25,7 +25,7 @@ namespace _538_10_sided_die
                     {
                         exit = true;
                     }
-                    else if (roll < rollList[counter])
+                    else if (roll <= rollList[counter])
                     {
                         rollList.Add(roll);
                         counter++;
