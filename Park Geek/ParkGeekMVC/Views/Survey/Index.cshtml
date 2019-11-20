@@ -1,0 +1,23 @@
+﻿@using ParkGeek.DAL.Models
+@model IList<Surveys>
+@section Title {
+    Favorite Parks
+}
+
+
+<section class="surveyPanel">
+    <h1>Most Popular Parks</h1>
+
+    @foreach (var survey in Model)
+    {
+        <div class="park-tile">
+            <a asp-controller="Park" asp-action="Detail" asp-route-parkCode="@(survey.Park.ParkCode)"><img id="park-image" src="~/img/parks/@(survey.Park.ParkCode).jpg" /></a>
+            <p id="park-entry">@survey.Park.ParkName </p>
+
+            <p id="numReviews">@survey.NumberOfReviews
+                    <img id="thumbimage" src="~/img/thumb.png" /></p>
+
+        </div>
+    }
+
+</section>

@@ -1,0 +1,238 @@
+﻿body {
+    width: 100%;
+    font-family: sans-serif;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+img {
+    border-radius: 7px;
+}
+
+
+/*Header in LAYOUT*/
+#logo_container {
+    background-color: linen;
+}
+
+#park_survey_navigation {
+    background-color: linen;
+    border-top: solid 5px mediumseagreen;
+    border-bottom: solid 5px mediumseagreen;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#logo_container img {
+    max-height: 150px;
+    padding-left: 30px;
+}
+
+#barrier {
+    height: 25px;
+}
+
+nav ul {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+    nav ul li {
+        background-color: linen;
+        border-radius: 8px;
+        list-style: none;
+        text-align: left;
+        font-family: 'Comic Sans MS';
+        font-size: 2em;
+        font-weight: bold;
+        /*flex-grow: 1;*/
+        padding-top: 5px;
+        margin: 0 10px;
+        max-width: 50px;
+    }
+
+        nav ul li a {
+            color: mediumseagreen;
+        }
+
+li a:hover {
+    text-decoration: underline;
+    color: brown;
+}
+
+
+/*PARKS PAGE*/
+.index_container {
+    display: flex;
+    padding-bottom: 10px;
+    padding-left: 25px;
+}
+
+    .side {
+        width: 750px;
+        padding-left: 20px;
+    }
+
+
+
+
+/*DETAILS PAGE*/
+
+.detail-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+    padding-bottom: 10px;
+    padding-right: 30px;
+}
+
+    #detail-container img {
+        width: 45%;
+        padding-right: 25px;
+    }
+    .detail-details {
+        width: 55%;
+    }
+
+    .detail-description {
+        width: 100%;
+    }
+
+    #quote, quote-source {
+        width: 60%;
+        align-items: flex-end;
+        font-size: medium;
+        font-style: italic;
+    }
+
+    table {
+        width: 100%;
+        margin-top: 10px;
+
+    }
+    td {
+        width: 25%;
+        vertical-align: top;
+        padding-bottom: 5px;
+    }
+ 
+    .content {
+        width: 100%;
+        display: flex;
+    }
+
+/*weather*/
+.tab-content {
+    display: flex;
+}
+
+.tab-pane active, tab-pane {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 2px solid mediumseagreen;
+}
+
+.fahrenheit, celsius {
+    display: flex;
+    border: 2px solid mediumseagreen;
+}
+
+#forecast-today {
+    border: 2px solid mediumseagreen;
+}
+#forecast-today p {
+    margin-left: 35px;
+    font: bold 15px,arial, verdana;
+}
+
+#forecast-future {
+    display: flex;
+    border: 2px solid mediumseagreen;
+}
+
+#forecast-single {
+    font: bold 15px,arial, verdana;
+    text-align: center;
+}
+
+
+/*SURVEY PAGE*/
+section.surveyPanel {
+    /*clear: both;*/
+    display: block;
+    width: 90%;
+    vertical-align: top;
+    background-color: white;
+    margin: 50px auto;
+}
+
+.surveyPanel h1 {
+    padding-bottom: 25px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+form div {
+    padding: 10px 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+form div label {
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 25px;
+    padding-right: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+/*LIST OF SURVEYS*/
+.park-tile {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr 2fr;
+    grid-template-areas: "img p p2 . .";
+    padding-bottom: 15px;
+}
+
+    .park-tile img #park-image {
+        grid-area: img;
+        width: 100%;
+        padding-bottom: 15px;
+    }
+
+    #park-entry {
+        grid-area: p;
+        font-weight: bold;
+        padding-left: 20px;
+    }
+
+    #numReviews {
+    grid-area: p2;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+    #numReviews img {
+        width: 7.5564%;
+    }
+    
+
+
+
+
+
+
+.error {
+    color: red;
+}
+
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}

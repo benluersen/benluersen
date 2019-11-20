@@ -1,0 +1,14 @@
+C:\Users\Student\workspace\team6-c-week4-pair-exercises\19_Capstone\dotnet\VendingMachineCLI.cs\bin\Debug\netcoreapp2.2\VendingMachineCLI.deps.json
+C:\Users\Student\workspace\team6-c-week4-pair-exercises\19_Capstone\dotnet\VendingMachineCLI.cs\bin\Debug\netcoreapp2.2\VendingMachineCLI.runtimeconfig.json
+C:\Users\Student\workspace\team6-c-week4-pair-exercises\19_Capstone\dotnet\VendingMachineCLI.cs\bin\Debug\netcoreapp2.2\VendingMachineCLI.runtimeconfig.dev.json
+C:\Users\Student\workspace\team6-c-week4-pair-exercises\19_Capstone\dotnet\VendingMachineCLI.cs\bin\Debug\netcoreapp2.2\VendingMachineCLI.dll
+C:\Users\Student\workspace\team6-c-week4-pair-exercises\19_Capstone\dotnet\VendingMachineCLI.cs\bin\Debug\netcoreapp2.2\VendingMachineCLI.pdb
+C:\Users\Student\workspace\team6-c-week4-pair-exercises\19_Capstone\dotnet\VendingMachineCLI.cs\bin\Debug\netcoreapp2.2\VendingMachine.dll
+C:\Users\Student\workspace\team6-c-week4-pair-exercises\19_Capstone\dotnet\VendingMachineCLI.cs\bin\Debug\netcoreapp2.2\VendingMachine.pdb
+C:\Users\Student\workspace\team6-c-week4-pair-exercises\19_Capstone\dotnet\VendingMachineCLI.cs\obj\Debug\netcoreapp2.2\VendingMachineCLI.csprojAssemblyReference.cache
+C:\Users\Student\workspace\team6-c-week4-pair-exercises\19_Capstone\dotnet\VendingMachineCLI.cs\obj\Debug\netcoreapp2.2\VendingMachineCLI.csproj.CoreCompileInputs.cache
+C:\Users\Student\workspace\team6-c-week4-pair-exercises\19_Capstone\dotnet\VendingMachineCLI.cs\obj\Debug\netcoreapp2.2\VendingMachineCLI.AssemblyInfoInputs.cache
+C:\Users\Student\workspace\team6-c-week4-pair-exercises\19_Capstone\dotnet\VendingMachineCLI.cs\obj\Debug\netcoreapp2.2\VendingMachineCLI.AssemblyInfo.cs
+C:\Users\Student\workspace\team6-c-week4-pair-exercises\19_Capstone\dotnet\VendingMachineCLI.cs\obj\Debug\netcoreapp2.2\VendingMachineCLI.csproj.CopyComplete
+C:\Users\Student\workspace\team6-c-week4-pair-exercises\19_Capstone\dotnet\VendingMachineCLI.cs\obj\Debug\netcoreapp2.2\VendingMachineCLI.dll
+C:\Users\Student\workspace\team6-c-week4-pair-exercises\19_Capstone\dotnet\VendingMachineCLI.cs\obj\Debug\netcoreapp2.2\VendingMachineCLI.pdb

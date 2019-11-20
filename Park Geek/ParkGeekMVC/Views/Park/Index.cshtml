@@ -1,0 +1,31 @@
+﻿@model IList<Park>
+
+@section Title {
+    National Park Geek
+}
+
+<!-- Link to the Detail page using the parkCode (e.g. Park/Detail/cvnp) -->
+
+
+    @foreach (var park in Model)
+    {
+    <div class="index_container">
+        <div class="image_card">
+            <a asp-controller="Park" asp-action="Detail" asp-route-parkCode="@(park.ParkCode)"><img src="~/img/parks/@(park.ParkCode).jpg" /></a>
+        </div>
+
+        <div class="side">
+            <div class="side_b">
+                <h2>@park.ParkName</h2>
+            </div>
+            <div class="side_c">
+                <p>@park.ParkDescription</p>
+            </div>
+        </div>
+    </div>
+    }
+
+
+</div>
+
+<a asp-controller="user" asp-action="logout">Logout</a>

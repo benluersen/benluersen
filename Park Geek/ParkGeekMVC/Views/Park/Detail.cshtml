@@ -1,0 +1,99 @@
+﻿@model ParkViewModel
+
+
+@section Title {
+    Park Details
+}
+
+
+<section>
+    <div class="detail-container">
+        <div id="image">
+            <img src="/img/parks/@(Model.Park.ParkCode).jpg" />
+        </div>
+
+        <div class="detail-details">
+            <h2>@Model.Park.ParkName, @Model.Park.State</h2>
+            <div id="quote">@Model.Park.InspirationalQuote</div>
+            <div id="quote-source">@Model.Park.InspirationalQuoteSource</div>
+            <br /><br />
+            <table>
+                <tr>
+                    <td><b>Acreage: </b>@Model.Park.Acreage<b></td>
+                    <td><b>Elevation: </b>@Model.Park.ElevationInFeet</td>
+                    <td><b>Climate: </b>@Model.Park.Climate</td>
+                    <td><b>Entry Fee: $</b>@Model.Park.EntryFee</td>
+                </tr>
+                <tr>
+                    <td><b>Miles of Trail: </b>@Model.Park.MilesOfTrail</td>
+                    <td><b>Number of Campsites: </b>@Model.Park.NumberOfCampsites</td>
+                    <td><b>Annual Visitors: </b>@Model.Park.AnnualVisitors</td>
+                    <td><b>Number of Animal Species: </b>@Model.Park.NumAnimalSpecies</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="detail_description"><p>@Model.Park.ParkDescription</p></div>
+</section>
+
+
+
+
+<div id="exTab2" class="container">
+    <ul class="nav nav-tabs">
+        <li class="active">
+            <a href="#1" data-toggle="tab">Farenheit  |  </a>
+        </li>
+        <li>
+            <a href="#2" data-toggle="tab">Celsius</a>
+        </li>
+    </ul>
+
+    <div class="tab-content ">
+        <div class="tab-pane active" id="1">
+            <div class="farenheit">
+                <div id="forecast-today">
+                    <img src="~/img/weather/@(Model.WeatherPicString(Model.FiveDayForeCast[0].Forecast)).png" />
+                    <p>High: @Model.FiveDayForeCast[0].HighTemp</p>
+                    <p>Low: @Model.FiveDayForeCast[0].LowTemp</p>
+                    <p>@Model.WeatherWarningForecast(Model.FiveDayForeCast[0].Forecast)</p>
+                </div>
+                <div id="forecast-future">
+                    @for (int i = 1; i < Model.FiveDayForeCast.Count; i++)
+                    {
+                        <div id="forecast-single">
+                            <img src="~/img/weather/@(Model.WeatherPicString(Model.FiveDayForeCast[i].Forecast)).png" />
+                            <p>High: @Model.FiveDayForeCast[i].HighTemp</p>
+                            <p>Low: @Model.FiveDayForeCast[i].LowTemp</p>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane" id="2">
+
+            <div class="celsius">
+                <div id="forecast-today">
+                    <img src="~/img/weather/@(Model.WeatherPicString(Model.FiveDayForeCast[0].Forecast)).png" />
+                    <p>High: @Model.ConvertTempC(Model.FiveDayForeCast[0].HighTemp)</p>
+                    <p>Low: @Model.ConvertTempC(Model.FiveDayForeCast[0].LowTemp)</p>
+                    <p>@Model.WeatherWarningForecast(Model.FiveDayForeCast[0].Forecast)</p>
+                </div>
+                <div id="forecast-future">
+                    @for (int i = 1; i < Model.FiveDayForeCast.Count; i++)
+                    {
+                        <div id="forecast-single">
+                            <img src="~/img/weather/@(Model.WeatherPicString(Model.FiveDayForeCast[i].Forecast)).png" />
+                            <p>High:@Model.ConvertTempC(Model.FiveDayForeCast[i].HighTemp)</p>
+                            <p>Low: @Model.ConvertTempC(Model.FiveDayForeCast[i].LowTemp)</p>
+                       </div>
+                    }
+                </div>
+           </div>
+    </div>
+</div>
+
+
+
+

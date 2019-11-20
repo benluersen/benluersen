@@ -1,0 +1,37 @@
+﻿@model SurveyViewModel
+@section Title {
+    Post Survey
+}
+
+<section class="surveyPanel">
+    <p>Please vote for your favorite National Park and provide us with your contact information. <br>
+    You could win an all-expense paid trip to your favorite destination! </p>
+    <form asp-controller="Survey" asp-action="AddNewSurvey" method="post">
+
+        <div class="form-group">
+            <label asp-for="Survey.ParkCode">Favorite National Park:  </label>
+            <select asp-for="Survey.ParkCode" asp-items="Model.ParkNames" name="Survey.ParkCode" id="ParkCode"></select>
+            <span asp-validation-for="Survey.ParkCode"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Survey.Email"> Your Email:  </label>
+            <input asp-for="Survey.Email" />
+            <span asp-validation-for="Survey.Email"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Survey.State">State:  </label>
+            <select asp-for="Survey.State" asp-items="Model.States" name="Survey.State" id="State"></select>
+            <span asp-validation-for="Survey.State"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Survey.ActivityLevel">Activity Level:  </label>
+            <select asp-for="Survey.ActivityLevel" asp-items="Model.ActivityLevel" name="Survey.ActivityLevel" id="Activity Level"></select>
+            <span asp-validation-for="Survey.ActivityLevel"></span>
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</section>

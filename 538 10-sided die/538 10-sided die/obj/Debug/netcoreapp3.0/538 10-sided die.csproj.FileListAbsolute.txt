@@ -20,3 +20,14 @@ C:\Users\benlu\Documents\My repository\538 10-sided die\538 10-sided die\obj\Deb
 C:\Users\benlu\Documents\My repository\538 10-sided die\538 10-sided die\obj\Debug\netcoreapp3.0\538 10-sided die.AssemblyInfo.cs
 C:\Users\benlu\Documents\My repository\538 10-sided die\538 10-sided die\obj\Debug\netcoreapp3.0\538 10-sided die.dll
 C:\Users\benlu\Documents\My repository\538 10-sided die\538 10-sided die\obj\Debug\netcoreapp3.0\538 10-sided die.pdb
+C:\Users\Student\workspace\github repo\benluersen\538 10-sided die\538 10-sided die\bin\Debug\netcoreapp3.0\538 10-sided die.exe
+C:\Users\Student\workspace\github repo\benluersen\538 10-sided die\538 10-sided die\bin\Debug\netcoreapp3.0\538 10-sided die.deps.json
+C:\Users\Student\workspace\github repo\benluersen\538 10-sided die\538 10-sided die\bin\Debug\netcoreapp3.0\538 10-sided die.runtimeconfig.json
+C:\Users\Student\workspace\github repo\benluersen\538 10-sided die\538 10-sided die\bin\Debug\netcoreapp3.0\538 10-sided die.runtimeconfig.dev.json
+C:\Users\Student\workspace\github repo\benluersen\538 10-sided die\538 10-sided die\bin\Debug\netcoreapp3.0\538 10-sided die.dll
+C:\Users\Student\workspace\github repo\benluersen\538 10-sided die\538 10-sided die\bin\Debug\netcoreapp3.0\538 10-sided die.pdb
+C:\Users\Student\workspace\github repo\benluersen\538 10-sided die\538 10-sided die\obj\Debug\netcoreapp3.0\538 10-sided die.csprojAssemblyReference.cache
+C:\Users\Student\workspace\github repo\benluersen\538 10-sided die\538 10-sided die\obj\Debug\netcoreapp3.0\538 10-sided die.AssemblyInfoInputs.cache
+C:\Users\Student\workspace\github repo\benluersen\538 10-sided die\538 10-sided die\obj\Debug\netcoreapp3.0\538 10-sided die.AssemblyInfo.cs
+C:\Users\Student\workspace\github repo\benluersen\538 10-sided die\538 10-sided die\obj\Debug\netcoreapp3.0\538 10-sided die.dll
+C:\Users\Student\workspace\github repo\benluersen\538 10-sided die\538 10-sided die\obj\Debug\netcoreapp3.0\538 10-sided die.pdb
