@@ -88,10 +88,12 @@ namespace ParkGeek.DAL
         #endregion
 
         #region survey methods
-        public void AddNewSurvey(SurveyResult survey)
+        public bool AddNewSurvey(SurveyResult survey)
         {
+            bool result = false;
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
+
                 conn.Open();
                 SqlCommand cmd = new SqlCommand("INSERT INTO survey_result (parkCode, emailAddress, state, activityLevel)" +
                     " VALUES (@parkCode, @emailAddress, @state, @activityLevel);", conn);
@@ -101,8 +103,13 @@ namespace ParkGeek.DAL
                 cmd.Parameters.AddWithValue("@state", survey.State);
                 cmd.Parameters.AddWithValue("@activityLevel", survey.ActivityLevel);
 
-                cmd.ExecuteNonQuery();
+                int rowsAffected = cmd.ExecuteNonQuery();
+                if(rowsAffected == 1)
+                {
+                    result = true;
+                }
             }
+            return result;
         }
 
         public IList<Surveys> GetSurveyParkList()

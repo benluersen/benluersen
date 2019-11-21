@@ -40,7 +40,7 @@ namespace ParkGeekMVC.Controllers
             _db.AddNewSurvey(surveyViewModel.Survey);
             var parkSurveyList = _db.GetSurveyParkList();
 
-            return GetAuthenticatedView("Index", parkSurveyList);
+            return RedirectToAction("Index", parkSurveyList);
         }
 
       

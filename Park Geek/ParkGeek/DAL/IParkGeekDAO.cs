@@ -9,7 +9,7 @@ namespace ParkGeek
     {
         IList<Park> GetAllParks();
         Park GetPark(string parkCode);
-        void AddNewSurvey(SurveyResult survey);
+        bool AddNewSurvey(SurveyResult survey);
         IList<Weather> GetFiveDayWeather(string parkCode);
         IList<Surveys> GetSurveyParkList();
         
