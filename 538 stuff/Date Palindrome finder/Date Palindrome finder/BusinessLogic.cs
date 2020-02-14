@@ -8,17 +8,17 @@ namespace Date_Palindrome_finder
 {
     class BusinessLogic
     {
-        public int HowManyPalindromes(string endYear)
+        public List<string> HowManyPalindromes(string endYear)
         {
             var date = DateTime.Now;
-            int palindromeCounter = 0;
+            List<string> palindromeCounter = new List<string>();
             while (date.Year.ToString() != endYear)
             {
                 string dateString = date.ToString("MMddyyyy");
                 var reversedDateString = new String(dateString.Reverse().ToArray());
                 if (dateString == reversedDateString)
                 {
-                    palindromeCounter++;
+                    palindromeCounter.Add(dateString);
                 }
                 date = date.AddDays(1);
             }
