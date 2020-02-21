@@ -4,3 +4,9 @@
 \\tql.com\shares\redirectedfolders\benjamin.luersen\my documents\visual studio 2015\Projects\Date Palindrome finder\Date Palindrome finder\obj\Debug\Date Palindrome finder.csprojResolveAssemblyReference.cache
 \\tql.com\shares\redirectedfolders\benjamin.luersen\my documents\visual studio 2015\Projects\Date Palindrome finder\Date Palindrome finder\obj\Debug\Date Palindrome finder.exe
 \\tql.com\shares\redirectedfolders\benjamin.luersen\my documents\visual studio 2015\Projects\Date Palindrome finder\Date Palindrome finder\obj\Debug\Date Palindrome finder.pdb
+C:\Users\benjamin.luersen\Desktop\benluersen\538 stuff\Date Palindrome finder\Date Palindrome finder\bin\Debug\Date Palindrome finder.exe.config
+C:\Users\benjamin.luersen\Desktop\benluersen\538 stuff\Date Palindrome finder\Date Palindrome finder\bin\Debug\Date Palindrome finder.exe
+C:\Users\benjamin.luersen\Desktop\benluersen\538 stuff\Date Palindrome finder\Date Palindrome finder\bin\Debug\Date Palindrome finder.pdb
+C:\Users\benjamin.luersen\Desktop\benluersen\538 stuff\Date Palindrome finder\Date Palindrome finder\obj\Debug\Date Palindrome finder.csprojResolveAssemblyReference.cache
+C:\Users\benjamin.luersen\Desktop\benluersen\538 stuff\Date Palindrome finder\Date Palindrome finder\obj\Debug\Date Palindrome finder.exe
+C:\Users\benjamin.luersen\Desktop\benluersen\538 stuff\Date Palindrome finder\Date Palindrome finder\obj\Debug\Date Palindrome finder.pdb

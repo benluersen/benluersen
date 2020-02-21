@@ -4,3 +4,9 @@
 \\tql.com\shares\redirectedfolders\benjamin.luersen\my documents\visual studio 2015\Projects\Merge Sort Practice\Merge Sort Practice\obj\Debug\Merge Sort Practice.exe
 \\tql.com\shares\redirectedfolders\benjamin.luersen\my documents\visual studio 2015\Projects\Merge Sort Practice\Merge Sort Practice\obj\Debug\Merge Sort Practice.pdb
 \\tql.com\shares\redirectedfolders\benjamin.luersen\my documents\visual studio 2015\Projects\Merge Sort Practice\Merge Sort Practice\obj\Debug\Merge Sort Vs Bubble Sort Practice.csprojResolveAssemblyReference.cache
+C:\Users\benjamin.luersen\Desktop\benluersen\Merge Sort Practice\Merge Sort Practice\bin\Debug\Merge Sort Practice.exe.config
+C:\Users\benjamin.luersen\Desktop\benluersen\Merge Sort Practice\Merge Sort Practice\bin\Debug\Merge Sort Practice.exe
+C:\Users\benjamin.luersen\Desktop\benluersen\Merge Sort Practice\Merge Sort Practice\bin\Debug\Merge Sort Practice.pdb
+C:\Users\benjamin.luersen\Desktop\benluersen\Merge Sort Practice\Merge Sort Practice\obj\Debug\Merge Sort Vs Bubble Sort Practice.csprojResolveAssemblyReference.cache
+C:\Users\benjamin.luersen\Desktop\benluersen\Merge Sort Practice\Merge Sort Practice\obj\Debug\Merge Sort Practice.exe
+C:\Users\benjamin.luersen\Desktop\benluersen\Merge Sort Practice\Merge Sort Practice\obj\Debug\Merge Sort Practice.pdb

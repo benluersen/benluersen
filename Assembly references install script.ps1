@@ -158,6 +158,91 @@ cd C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.Repositories\bin\Debug
 gacutil /i TQL.BZT.Repositories.dll
 
 
+buildVS -path C:\VSTS2016\TQL.BZT.DAL\TQL.BZT.DAL.Services\TQL.BZT.DAL.Services.csproj
+
+buildVS -path C:\VSTS2016\TQL.BZT\Solutions\TQL.BZT.DAL\TQL.BZT.DAL.Services.AutoAccept\TQL.BZT.DAL.Services.Async.csproj
+
+cd C:\VSTS2016\TQL.BZT\Common\Assemblies
+gacutil /i Newtonsoft.Json.dll
+gacutil /i TQL.BZT.Logger.dll
+cd C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.LoggingUtils
+
+buildVS -path C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.BLL.sln
+
+cd C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.LoggingUtils\bin\Debug
+gacutil /i TQL.BZT.LoggingUtils.dll
+cd C:\VSTS2016\TQL.BZT.DAL\TQL.BZT.DAL.EDI\bin\Debug
+gacutil /i TQL.BZT.DAL.dll
+
+buildVS -path C:\VSTS2016\TQL.BZT.DAL\TQL.BZT.DAL.Services\TQL.BZT.DAL.Services.csproj
+
+cd C:\VSTS2016\TQL.BZT.DAL\TQL.BZT.DAL.Services\bin\Debug
+gacutil /i TQL.BZT.DAL.Services.dll
+
+buildVS -path C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.DataContracts\TQL.BZT.DataContracts.csproj
+
+buildVS -path C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.DataContracts.AutoAccept\TQL.BZT.DataContracts.AutoAccept.csproj
+
+cd C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.DataContracts.AutoAccept\bin\Debug
+gacutil /i TQL.BZT.DataContracts.AutoAccept.dll
+
+buildVS -path C:\VSTS2016\TQL.BZT\Solutions\TQL.BZT.DAL\TQL.BZT.DAL.Services.AutoAccept\TQL.BZT.DAL.Services.Async.csproj
+
+buildVS -path C:\VSTS2016\Projects\bll\TQL.BZT.BLL\TQL.BZT.BLL.sln
+
+cd C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.DataContracts.AutoAccept\bin\Debug
+gacutil /i TQL.BZT.DataContracts.AutoAccept.dll
+
+buildVS -path C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.Repositories\TQL.BZT.Repositories.sln
+buildVS -path C:\VSTS2016\TQL.BZT\Solutions\TQL.BZT.DAL\TQL.BZT.DAL.Services.AutoAccept\TQL.BZT.DAL.Services.Async.csproj
+
+cd C:\VSTS2016\TQL.BZT\Solutions\TQL.BZT.DAL\TQL.BZT.DAL.Services.AutoAccept\bin\Debug
+gacutil /i TQL.BZT.DAL.Services.Async.dll
+cd C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.DataContracts\bin\Debug
+gacutil /i TQL.BZT.DataContracts.dll
+cd C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.DataContracts.AutoAccept\bin\Debug
+gacutil /i TQL.BZT.DataContracts.AutoAccept.dll
+cd C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.DataContracts.ContractRates\bin\Debug
+gacutil /i TQL.BZT.DataContracts.ContractRates.dll
+cd C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.DataContracts.CustOrgRel\bin\Debug
+gacutil /i TQL.BZT.DataContracts.CustOrgRel.dll
+cd C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.DataContracts.FTP\bin\Debug
+gacutil /i TQL.BZT.DataContracts.FTP.dll
+cd C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.DataContracts.Status\bin\Debug
+gacutil /i TQL.BZT.DataContracts.Status.dll
+cd C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.EDIOverridesService.DataContracts\bin\Debug
+gacutil /i TQL.BZT.EDIOverridesService.DataContracts.dll
+cd C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.LMDataContracts\bin\Debug
+gacutil /i TQL.BZT.LMDataContracts.dll
+cd C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.Repositories\bin\Debug
+gacutil /i TQL.BZT.Repositories.dll
+
+buildVS -path C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.BLL.sln
+
+cd C:\VSTS2016\TQL.BZT\Solutions\TQL.BZT.DAL\TQL.BZT.DAL.Services.AutoAccept\bin\Debug
+gacutil /i TQL.BZT.DAL.Services.Async.dll
+cd C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.DataContracts\bin\Debug
+gacutil /i TQL.BZT.DataContracts.dll
+cd C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.DataContracts.AutoAccept\bin\Debug
+gacutil /i TQL.BZT.DataContracts.AutoAccept.dll
+cd C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.DataContracts.ContractRates\bin\Debug
+gacutil /i TQL.BZT.DataContracts.ContractRates.dll
+cd C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.DataContracts.CustOrgRel\bin\Debug
+gacutil /i TQL.BZT.DataContracts.CustOrgRel.dll
+cd C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.DataContracts.FTP\bin\Debug
+gacutil /i TQL.BZT.DataContracts.FTP.dll
+cd C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.DataContracts.Status\bin\Debug
+gacutil /i TQL.BZT.DataContracts.Status.dll
+cd C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.EDIOverridesService.DataContracts\bin\Debug
+gacutil /i TQL.BZT.EDIOverridesService.DataContracts.dll
+cd C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.LMDataContracts\bin\Debug
+gacutil /i TQL.BZT.LMDataContracts.dll
+cd C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.Repositories\bin\Debug
+gacutil /i TQL.BZT.Repositories.dll
+
+cd C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.Repositories\bin\Debug
+gacutil /i TQL.BZT.Repositories.dll
+
 C:\VSTS2016\Projects\BLL\TQL.BZT.BLL\TQL.BZT.BLL.sln
 
 buildVS -path C:\VSTS2016\Projects\Rules\TQL.BZT.Rules.Utils\TQL.BZT.Rules.Utils.csproj
