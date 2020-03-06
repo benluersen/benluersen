@@ -4,14 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Date_Palindrome_finder
+namespace ConsoleApplication1
 {
     class Program
     {
         static void Main(string[] args)
         {
-            CLI cli = new CLI();
-            cli.cli();
+            string hello = "hello";
+            string goodbye = null;
+
+            Console.WriteLine(hello + goodbye);
+            Console.ReadKey();
         }
     }
 }
