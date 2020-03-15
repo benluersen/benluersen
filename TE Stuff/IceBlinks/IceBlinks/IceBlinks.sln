@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IceBlinks", "IceBlinks\IceBlinks.csproj", "{0737851D-F661-4EFC-9A21-8EE95F28625C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Security", "Security\Security.csproj", "{711F69A4-4C96-4558-819C-0AD1EF64A0FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IceBlinksTest", "UnitTestProject1\IceBlinksTest.csproj", "{5314BA94-ACC7-43F6-A3D8-5973E257038B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0737851D-F661-4EFC-9A21-8EE95F28625C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0737851D-F661-4EFC-9A21-8EE95F28625C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0737851D-F661-4EFC-9A21-8EE95F28625C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0737851D-F661-4EFC-9A21-8EE95F28625C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{711F69A4-4C96-4558-819C-0AD1EF64A0FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{711F69A4-4C96-4558-819C-0AD1EF64A0FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{711F69A4-4C96-4558-819C-0AD1EF64A0FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{711F69A4-4C96-4558-819C-0AD1EF64A0FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5314BA94-ACC7-43F6-A3D8-5973E257038B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5314BA94-ACC7-43F6-A3D8-5973E257038B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5314BA94-ACC7-43F6-A3D8-5973E257038B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5314BA94-ACC7-43F6-A3D8-5973E257038B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {658F99ED-84BD-46C9-B82F-DE9121D27199}
+	EndGlobalSection
+EndGlobal

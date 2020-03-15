@@ -1,0 +1,30 @@
+﻿@model Tech
+
+@section StyleSheet {
+    <link href="~/css/Profile.css" rel="stylesheet" />
+}
+
+@section Title {
+    Tech
+}
+
+@section MyProfile {
+    <a asp-controller="Profile" asp-action="Profile" asp-route-id="@ViewData["currentUserId"]" class="text-dark">My Profile</a>
+    <a asp-controller="Login" asp-action="Logout" class="text-dark">Logout</a>
+}
+
+<h1>Profile</h1>
+<div class="row ProfileHeader">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+        @using (Html.BeginForm("Profile", "User", FormMethod.Post))
+        {
+            <div class="form-group">
+                <label asp-for="TechName"></label>
+                <input asp-for="TechName" placeholder="Tech Name" class="form-control" />
+                <span asp-validation-for="TechName" class="error"></span>
+            </div>
+        }
+    </div>
+    <div class="col-sm-4"></div>
+</div>

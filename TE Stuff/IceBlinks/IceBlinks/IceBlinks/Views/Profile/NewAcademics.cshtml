@@ -1,0 +1,94 @@
+﻿@using Security.Models.Database
+
+@model Academics
+
+@section StyleSheet {
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/Academics.css" rel="stylesheet" />
+}
+
+@section Title {
+    Add New Academic Background
+}
+
+@section MyProfile {
+
+    @if (ViewData["currentUser"] != null)
+    {
+        UserItem user = (UserItem)ViewData["currentUser"];
+        if (user.RoleId == 2)
+        {
+            <li><a asp-controller="Profile" asp-action="Profile" asp-route-id="@user.Id" class="nav-link text-dark">My Profile</a></li>
+        }
+        <li><a asp-controller="Login" asp-action="Logout" class="nav-link text-dark">Logout</a></li>
+    }
+}
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form asp-action="AddAcademics" asp-controller="Profile" method="post">
+    <fieldset>
+        <legend>Add Academic Background</legend>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label asp-for="Institution">Institution </label>
+                        <input asp-for="Institution" class="form-control" />
+                        <span asp-validation-for="Institution" class="error"></span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+
+                    <div class="custom-control custom-switch col text-right">
+                        <input asp-for="Graduated" type="checkbox" class="custom-control-input" id="customSwitch1">
+                        <label asp-for="Graduated" class="custom-control-label" for="customSwitch1">Graduated?</label>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label asp-for="Degree">Degree</label>
+                        <input asp-for="Degree" placeholder="Degree" class="form-control" />
+                        <span asp-validation-for="Degree" class="error"></span>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label asp-for="Major">Major </label>
+                        <input asp-for="Major" class="form-control" />
+                        <span asp-validation-for="Major" class="error"></span>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label asp-for="StartDate">Start Date </label>
+                        <input asp-for="StartDate" class="form-control" />
+                        <span asp-validation-for="StartDate" class="error"></span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label asp-for="EndDate">End Date </label>
+                        <input asp-for="EndDate" class="form-control" />
+                        <span asp-validation-for="EndDate" class="error"></span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-left">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+                <div class="col-md-6 text-right">
+                    <a asp-controller="Profile" asp-action="ProfileEdit" asp-route-id="@ViewData["currentUserId"]" class="btn btn-danger">Cancel</a>
+                </div>
+            </div>
+            <input asp-for="Id" value="@Model.Id" hidden />
+            <input asp-for="ProfileId" value="@Model.ProfileId" hidden />
+        </div>
+    </fieldset>
+</form>

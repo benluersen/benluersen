@@ -1,0 +1,112 @@
+﻿@model RosterViewModel
+@using Security.Models.Database
+
+
+@section StyleSheet {
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/RosterSearch.css" rel="stylesheet" />
+}
+@section Title {
+    Student Roster
+}
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section MyProfile {
+
+    @if (ViewData["currentUser"] != null)
+    {
+        UserItem user = (UserItem)ViewData["currentUser"];
+        if (user.RoleId == 2)
+        {
+            <li><a asp-controller="Profile" asp-action="Profile" asp-route-id="@user.Id" class="nav-link text-dark">My Profile</a></li>
+        }
+        <li><a asp-controller="Login" asp-action="Logout" class="nav-link text-dark">Logout</a></li>
+    }
+}
+
+<h1>Student Roster</h1>
+
+<form asp-action="SearchRoster" asp-controller="Home" method="get">
+
+    <fieldset>
+        <legend>Search the roster</legend>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label asp-for="Cohort">Cohort</label>
+                        <select asp-for="Cohort" asp-items="Model.CohortList" class="form-control"></select>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label asp-for="Industry">Industry</label>
+                        <select asp-for="Industry" asp-items="Model.IndustryList" class="form-control"></select>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-3 text-left">
+                    <div class="custom-control custom-switch">
+                        <input asp-for="ExclusiveSearch" type="checkbox" class="custom-control-input" id="customSwitch1">
+                        <label asp-for="ExclusiveSearch" class="custom-control-label" for="customSwitch1">Exclusive Search?</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label asp-for="Degree">Degree</label>
+                        <select asp-for="Degree" asp-items="Model.DegreeList" class="form-control"></select>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label asp-for="TechName" type="text">Technologies</label>
+                        <select asp-for="TechName" asp-items="Model.TechList" class="form-control"></select>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <div class="search-button text-left">
+                            <button type="submit" class="btn btn-info btn-bot">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+</form>
+<br />
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Cohort</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Contact Preference</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model.StudentPreviewList)
+        {
+            <tr>
+                <td>@student.Cohort</td>
+                <td>
+                    <a asp-controller="Profile" asp-action="Profile"
+                       asp-route-id="@student.Id">@student.FirstName @student.LastName</a>
+                </td>
+                <td>@student.Email</td>
+                <td>@student.Phone</td>
+                <td>@student.ContactPreference</td>
+            </tr>
+        }
+    </tbody>
+</table>

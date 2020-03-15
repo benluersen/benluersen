@@ -1,0 +1,177 @@
+﻿@using Security.Models.Database
+@model ProfileViewModel
+
+@section StyleSheet {
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/Profile.css" rel="stylesheet" />
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+}
+
+@section Title {
+    View Profile
+}
+
+@section MyProfile {
+
+    @if (ViewData["currentUser"] != null)
+    {
+        UserItem user = (UserItem)ViewData["currentUser"];
+        if (user.RoleId == 2)
+        {
+            <li><a asp-controller="Profile" asp-action="Profile" asp-route-id="@user.Id" class="nav-link text-dark">My Profile</a></li>
+        }
+        <li><a asp-controller="Login" asp-action="Logout" class="nav-link text-dark">Logout</a></li>
+    }
+}
+
+<h1>View Profile</h1>
+@if ((bool)ViewData["UserAuthorized"])
+{
+    <div class="col-sm-12 text-right">
+        <a asp-action="ProfileEdit" asp-controller="Profile" class="btn btn-info">Edit Profile</a>
+    </div>
+}
+<div class="row ProfileViewHeader">
+    <form class="ProfileViewForms">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>
+                            <b>Student Name: </b>@Model.FirstName @Model.LastName<br />
+                        </p>
+                        <p>
+                            <b>Email: </b>@Model.Email<br />
+                            <b>Phone: </b>@Model.Phone<br />
+                            <b>Contact Preference: </b>@Model.ContactPreference
+                        </p>
+                        <p>
+                            <b>Address:</b><br />
+                            @Model.Address<br />
+                            @Model.City, @Model.State @Model.PostalCode
+                        </p>
+                    </div>
+                    <div class="col-sm-2">
+                        <p><b>Cohort: </b>@Model.Cohort</p>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <p><img src="@(Model.PhotoLink == null || Model.PhotoLink == "" ? "https://i.stack.imgur.com/34AD2.jpg" : Model.PhotoLink)" height="200" border="0"></p>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>Profile Information</legend>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p><b>Professional Summary: </b>@Model.Summary</p>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <p><b>Soft Skills: </b>@Model.SoftSkills</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p><b>Interests: </b>@Model.Interests</p>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>Career Experience</legend>
+            <div class="container">
+                <div class="row">
+                    @foreach (var job in Model.CareerExperienceList)
+                    {
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <p>
+                                    <b>Title: </b>@job.Title<br />
+                                    <b>Employer: </b>@job.Employer<br />
+                                    <b>Industry: </b>@job.Industry<br />
+                                    <b>Start Date: </b>@job.StartDate.ToShortDateString()<br />
+                                    @*@if (job.Employed == true)
+                                    {
+                                        <b>Currently employed</b><br />
+                                    }
+                                    else
+                                    {
+                                        <b>End Date: </b>@job.EndDate.ToShortDateString()<br />
+                                    }*@
+                                    <b>Job Description: </b>@job.JobDescription<br />
+                                </p>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>Academic Background</legend>
+            <div class="container">
+                <div class="row">
+                    @foreach (var school in Model.AcademicsList)
+                    {
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <p>
+                                    <b>Institution: </b>@school.Institution<br />
+                                    <b>Degree: </b>@school.Degree<br />
+                                    <b>Major: </b>@school.Major<br />
+                                    <b>Start Date: </b>@school.StartDate.ToShortDateString() <br />
+                                    <b>End Date: </b>@school.EndDate.ToShortDateString()<br />
+
+                                    @if (school.Graduated == true)
+                                    {
+                                        <b>Graduated: </b><span>Completed</span><br />
+                                    }
+                                    else
+                                    {
+                                        <b>Graduated: </b><span>Not Completed</span><br />
+                                    }
+                                </p>
+
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>Portfolio</legend>
+            <div class="container">
+                <div class="row">
+                    @foreach (var project in Model.PortfolioProjects)
+                    {
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <p>
+                                    <b>Project Title: </b>@project.ProjectTitle<br />
+                                    <b>Description: </b>@project.ProjectDescription<br />
+                                    <b>Link to Code: </b>@project.ProjectLink<br>
+                                    <b>Technology Used: </b>
+                                    @for (int i = 0; i < project.TechnologiesUsed.Count; i++)
+                                    {
+                                        if (i != 0)
+                                        {
+                                            <a>, @(project.TechnologiesUsed[i].TechName)</a>
+                                        }
+                                        else
+                                        {
+                                            <a>@(project.TechnologiesUsed[i].TechName)</a>
+                                        }
+                                    }
+                                </p>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>

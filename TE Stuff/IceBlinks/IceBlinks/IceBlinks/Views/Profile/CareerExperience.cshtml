@@ -1,0 +1,65 @@
+﻿@model CareerExperience
+
+@section StyleSheet {
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/Profile.css" rel="stylesheet" />
+}
+
+@section Title {
+    Career Experience
+}
+
+<div class="row ProfileHeader">
+    <form asp-action="AddCareer" asp-controller="Profile" method="post">
+        <fieldset>
+            <legend>Career Experience</legend>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="@Model.Title">Title</label>
+                    <input asp-for="@Model.Title" placeholder="Title" class="form-control" />
+                    <span asp-validation-for="@Model.Title" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="@Model.Employer">Employer</label>
+                    <input asp-for="@Model.Employer" placeholder="Employer" class="form-control" />
+                    <span asp-validation-for="@Model.Employer" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="@Model.Industry">Industry</label>
+                    <input asp-for="@Model.Industry" placeholder="Industry" class="form-control" />
+                    <span asp-validation-for="@Model.Industry" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label asp-for="@Model.StartDate">Start Date</label>
+                    <input asp-for="@Model.StartDate" placeholder="Start Date" class="form-control" />
+                    <span asp-validation-for="@Model.StartDate" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label asp-for="@Model.EndDate">End Date</label>
+                    <input asp-for="@Model.EndDate" placeholder="End Date" class="form-control" />
+                    <span asp-validation-for="@Model.EndDate" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="@Model.JobDescription">Job Description</label>
+                    <textarea rows="4" asp-for="@Model.JobDescription" class="form-control"></textarea>
+                    <span asp-validation-for="@Model.JobDescription" class="error"></span>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+
+
+
+

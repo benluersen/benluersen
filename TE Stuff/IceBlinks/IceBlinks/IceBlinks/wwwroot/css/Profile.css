@@ -1,0 +1,32 @@
+﻿
+
+.container {
+    width: 100%;
+}
+
+/*.ProfileViewForms {
+    width: 100%;
+    justify-content: center;
+}*/
+
+
+fieldset {
+    width: 85%;
+    margin: auto;
+}
+
+label {
+    display: inline-block;
+    font-weight: bold;
+}
+
+
+#deleteLink {
+    color: red;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}

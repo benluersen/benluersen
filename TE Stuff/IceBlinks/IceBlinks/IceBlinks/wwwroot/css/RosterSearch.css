@@ -1,0 +1,17 @@
+﻿form {
+    overflow: hidden;
+}
+
+input {
+    display: inline-block;
+    float: right;
+}
+
+label {
+    display: inline-block;
+    font-weight: bold;
+    padding-right: 10px;
+    clear: both;
+}
+
+

@@ -1,0 +1,152 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+.navbar{
+    background-color: skyblue;
+}
+
+footer {
+    background-color: skyblue;
+}
+
+.navbar-img > img {
+    height: 60px;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.blinks {
+    font-size: large;
+    font-style: italic;
+    border: 0px, 0px, 0px, 0px;
+    padding: 0px, 0px, 0px, 0px;
+    margin: 0px;
+}
+
+.blinks > i {
+    font-size: 12px;
+    border-bottom:5px;
+}
+
+.motto {
+    font-size: x-small;
+    border: 0px, 0px, 0px, 0px;
+    padding: 0px, 0px, 0px, 0px;
+    margin: 2px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+}
+h1 {
+    text-align: center;
+}
+
+.standard-button-spacing {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.error {
+    color: red;
+    text-align: left;
+}
+
+.input-error-messages {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.pretty-forms > .form-group {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.pretty-forms > .form-group > .form-control {
+    width: 50%;
+}
+
+.pretty-forms > .form-group > span {
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.form {
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.navbar {
+    justify-content: space-between;
+}
+
+#logged-in-links {
+    margin: 0 !important;
+}

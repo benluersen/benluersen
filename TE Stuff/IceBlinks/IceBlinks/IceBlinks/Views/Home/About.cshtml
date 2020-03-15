@@ -1,0 +1,49 @@
+﻿@using Security.Models.Database
+
+@section Title{
+    About IceBlinks
+}
+@section StyleSheet {
+    <link href="~/css/about.css" rel="stylesheet" />
+}
+
+@section MyProfile {
+
+    @if (ViewData["currentUser"] != null)
+    {
+        UserItem user = (UserItem)ViewData["currentUser"];
+        if (user.RoleId == 2)
+        {
+            <li><a asp-controller="Profile" asp-action="Profile" asp-route-id="@user.Id" class="nav-link text-dark">My Profile</a></li>
+        }
+        <li><a asp-controller="Login" asp-action="Logout" class="nav-link text-dark">Logout</a></li>
+    }
+}
+
+<body class="bg">
+    <div class="specialclass">
+        <div class="abouttext">
+            <h1>About</h1>
+            <h2>What We Do</h2>
+            <p>
+                Here at IceBlinks we believe in building creative solutions from associative analytic processes
+                to create dynamic data sets which we use to grow our userbase.
+            </p>
+            <h2>Where We Came From</h2>
+            <p>
+                From humble beginnings as a multi-billion-dollar-valued tech startup, we have since grown into what you see today.
+                IceBlinks has been disrupting the disruptors using multi-pivot chaotic motion.
+                Utilizing these bleeding-edge technologies we hope to bring <i>Synergy From Within</i> &#8482 &#174 &#169
+            </p>
+            <h2>Our Experts</h2>
+            <p>
+                Pictured right is skilled team who made this possible. Ben (left), the Senior DAO-PRO and chaotic motion expert, was integral in the retrieval of data from the database.
+                Christian (center left), the systems architect and associative analyst, brought everything together. Kirsten (center right), our design lead and disruptor, worked tirelessly to get information to our users.
+                Bill (right), our database engineer and technologist, made our database great.
+            </p>
+        </div>
+        <div class="imgcontainer">
+            <img class="devimage" src="~/img/Lead Developer.jpg" />
+        </div>
+    </div>
+</body>
